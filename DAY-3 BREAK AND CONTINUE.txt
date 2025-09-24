@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main() {
+    int i =15;
+    while(i<=25) {
+        i++;
+        if (i==27) {
+            continue;
+        }
+        if (i==27) {
+            break ;
+        }
+        printf("%d",i);
+        }
+        return 0;
+        }
