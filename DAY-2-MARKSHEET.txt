@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char name[30];
+    int rollno;
+    char dept[20];
+    int sem;
+    int M3, MT2, ETD, FMM, EM;
+    int total;
+    float avg;
+
+    printf("Enter your name: ");
+    scanf("%s",&name);
+    printf("Enter your roll number: ");
+    scanf("%d", &rollno);
+
+    printf("Enter your department: ");
+    scanf("%s", dept);
+
+    printf("Enter the semester: ");
+    scanf("%d", &sem);
+
+    printf("Enter the marks of M3: ");
+    scanf("%d", &M3);
+
+    printf("Enter the marks of MT2: ");
+    scanf("%d", &MT2);
+
+    printf("Enter the marks of ETD: ");
+    scanf("%d", &ETD);
+
+    printf("Enter the marks of FMM: ");
+    scanf("%d", &FMM);
+
+    printf("Enter the marks of EM: ");
+    scanf("%d", &EM);
+
+    total = M3 + MT2 + ETD + FMM + EM;
+ 
+    printf("\nTotal marks: %d\n", total);
+    avg = total / 5.0f;
+    printf("Average marks: %.2f\n", avg);
+
+    printf("Your grade is: ");
+    if(total >= 450) {
+        printf("O\n");
+    }
+    else if(total >= 350) {
+        printf("A\n");
+    }
+    else if(total >= 250) {
+        printf("B\n");
+    }
+    else if(total >= 200) {
+        printf("C\n");
+    }
+    else {
+        printf("U\n");
+    }
+
+    printf("You have: ");
+    if(total >= 200) {
+        printf("Passed\n");
+    }
+    else {
+        printf("Failed\n");
+    }
+
+    return 0;
+}
+OUTPUT:
+Enter your name: KIRTI
+Enter your roll number: ME2420
+Enter your department: Enter the semester: 3
+Enter the marks of M3: 90
+Enter the marks of MT2: 89
+Enter the marks of ETD: 78
+Enter the marks of FMM: 67
+Enter the marks of EM: 97
+
+Total marks: 421
+Average marks: 84.20
+Your grade is: A
+You have: Passed
+=== Code Execution Successful ===

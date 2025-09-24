@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 3;
+    printf("Addition: %d\n", a + b);       // Output: 13
+    printf("Subtraction: %d\n", a - b);    // Output: 7
+    printf("Multiplication: %d\n", a * b); // Output: 30
+    printf("Division: %d\n", a / b);       // Output: 3
+    printf("Modulus: %d\n", a % b);        // Output: 1
+    return 0;
+}
