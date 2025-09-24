@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, max;
+
+    // Input three numbers
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    // Compare numbers to find the maximum
+    if (a > b && a > c) {
+        max = a;
+    } else if (b > c) {
+        max = b;
+    } else {
+        max = c;
+    }
+
+    // Output the result
+    printf("The maximum number is: %d\n", max);
+
+    return 0;
+}
