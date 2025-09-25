@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+int number[5];
+int i;
+printf("enter 5 number:\n");
+for(i=0;i<5;i++) {
+    scanf("%d",&number[i]);
+}
+printf("youy entered:\n");
+for(i=0;i<5;i++) {
+    printf("%d",number[i]);
+}
+return 0;
+}
