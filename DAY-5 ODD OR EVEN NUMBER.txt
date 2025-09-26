@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+   int lowerLimit, upperLimit;
+   printf("Enter the lower limit: ");
+   scanf("%d", &lowerLimit);
+   printf("Enter the upper limit: ");
+   scanf("%d", &upperLimit);
+   printf("Even numbers between %d and %d are: ", lowerLimit, upperLimit);
+   for (int i = lowerLimit; i <= upperLimit; i++) {
+       if (i % 2 == 0) {
+           printf("%d ", i);
+       }
+   }
+   printf("\n");
+   printf("Odd numbers between %d and %d are: ", lowerLimit, upperLimit);
+   for (int i = lowerLimit; i <= upperLimit; i++) {
+       if (i % 2 != 0) {
+           printf("%d ", i);
+       }
+   }
+   return 0;
+}

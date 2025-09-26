@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+   int size, i, searchElement, count = 0;
+   printf("Enter the size of the array: ");
+   scanf("%d", &size);
+   int arr[size];
+   printf("Enter %d elements: ", size);
+   for (i = 0; i < size; i++) {
+       scanf("%d", &arr[i]);
+   }
+   printf("Enter the element to search: ");
+   scanf("%d", &searchElement);
+   for (i = 0; i < size; i++) {
+       if (arr[i] == searchElement) {
+           count++;
+       }
+   }
+   printf("Element %d occurred %d times.\n", searchElement, count);
+   return 0;
+}
