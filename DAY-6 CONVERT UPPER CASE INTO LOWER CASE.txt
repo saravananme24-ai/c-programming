@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <ctype.h> 
+#include <string.h> 
+
+void convertToUppercase(char *str) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        str[i] = toupper(str[i]);
+    }
+}
+
+void convertToLowercase(char *str) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        str[i] = tolower(str[i]);
+    }
+}
+
+int main() {
+    char inputString[100];
+    char choice;
+
+    printf("Enter a string: ");
+    fgets(inputString, sizeof(inputString), stdin);
+
+    inputString[strcspn(inputString, "\n")] = '\0'; 
+
+    printf("Enter 'U' to convert to uppercase or 'L' to convert to lowercase: ");
+    scanf(" %c", &choice); 
+    if (choice == 'U' || choice == 'u') {
+        convertToUppercase(inputString);
+        printf("Uppercase string: %s\n", inputString);
+    } else if (choice == 'L' || choice == 'l') {
+        convertToLowercase(inputString);
+        printf("Lowercase string: %s\n", inputString);
+    } else {
+        printf("Invalid choice.\n");
+    }
+
+    return 0;
+}
